@@ -2,6 +2,7 @@
     "albums": [
     {
       "title" : "A Fable",
+      "shortname": "a_fable",
       "artwork" : "https://upload.wikimedia.org/wikipedia/en/6/6a/A_Fable_%28album%29.jpg",
       "year" : "2011",
       "tracks": ["Rain Shadow", 
@@ -20,6 +21,7 @@
         "Looking For The Block"]
     }, {
       "title" : "Shadow Theater",
+      "shortname": "shadow_theater",
       "artwork" : "https://upload.wikimedia.org/wikipedia/en/4/46/Shadow_Theater.jpg",
       "year" : "2013",
       "tracks": ["The Poet",
@@ -36,6 +38,7 @@
         "Road Song"]
     }, {
       "title" : "Mockroot",
+      "shortname": "mockroot",
       "artwork" : "https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Mockroot.jpg/220px-Mockroot.jpg",
       "year" : "2015",
       "tracks": ["To Love",
@@ -52,6 +55,7 @@
         "Out of the Grid"]
     }, {
       "title" : "Luys i Luso",
+      "shortname": "luys_i_luso",
       "artwork" : "https://upload.wikimedia.org/wikipedia/en/thumb/3/39/Luys_i_Luso.jpg/220px-Luys_i_Luso.jpg",
       "year" : "2015",
       "tracks": ["Ov Zarmanali",
@@ -84,6 +88,7 @@
         "Ancient Observer"]
     }, {
       "title" : "The Call Within",
+      "shortname": "the_call_within",
       "artwork" : "https://d3afybylsojytu.cloudfront.net/test/images/retail/upload/caca/af/xowfsha9smfvbivdtlhk3nr5_11783.jpg",
       "year" : "2020",
       "tracks": [ "Levitation 21",
