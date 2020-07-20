@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 
-// ejs
+// ejs and views 
 app.set('view engine', 'ejs')
 app.set('views', 'views')
 
