@@ -18,11 +18,13 @@
         </div>
       </div>
       <div class="col-6">
-        <h3 class='m-2 display-5'> <%= albumObj.title %>  - <%= albumObj.year %> </h3>
+        <h2 class='m-2 display-5'> <%= albumObj.title %>  - <%= albumObj.year %> </h2>
         <ul class='list-unstyled m-1 pl-3'>
-          <% albumObj.tracks.forEach(track => { %>
-            <li><%= albumObj.tracks.track %> </li>
-          <% }) %>
+          <% for( let index = 0; index < albumObj.tracks.length; index++ ) { %>
+            <li> <%= albumObj.tracks[index] %>  </li>
+          <% } %>
+            
+         
           
           <!-- <li>track 2</li>
           <li>track 3</li>
