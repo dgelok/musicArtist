@@ -7,7 +7,6 @@ const dataFile = require('../data/data.json')
 router.get('/', (req, res)=>{
     
     let albums = dataFile.albums
-    console.log(albums)
     res.render('index.ejs', {
         albums: albums
     })
