@@ -6,7 +6,8 @@ let albums = dataFile.albums
 router.get('/albums', (req, res)=>{
     
     res.render('albums', {
-        albums: albums
+        albums: albums,
+        maxlist: albums
     })
 })
 
@@ -21,7 +22,8 @@ router.get('/albums/:albumID', (req, res)=>{
         }
     })
     res.render('albums', {
-        albums: singlealbum
+        albums: singlealbum,
+        maxlist: albumsArray
     })
 })
 

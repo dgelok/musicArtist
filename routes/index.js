@@ -8,7 +8,8 @@ router.get('/', (req, res)=>{
     
     let albums = dataFile.albums
     res.render('index.ejs', {
-        albums: albums
+        albums: albums,
+        maxlist: albums
     })
 
 

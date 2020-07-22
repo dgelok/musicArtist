@@ -7,7 +7,8 @@ const discussfile = require('../data/discussion.json')
 router.get('/discuss', (req, res)=>{
     
     res.render('discuss', {
-        albums: albums
+        albums: albums,
+        maxlist: albums
     })
 })
 
