@@ -1,0 +1,11 @@
+body{
+    background-image: url("/images/background4.png");
+    height: 500px;
+    
+        /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}

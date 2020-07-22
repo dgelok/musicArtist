@@ -11,8 +11,8 @@ app.use(express.static('public'))
 // routes
 app.use(require('./routes/index'))
 app.use(require('./routes/albums'))
+app.use(require('./routes/discuss'))
 
-// views
 
 
 app.listen(4000, ()=>{

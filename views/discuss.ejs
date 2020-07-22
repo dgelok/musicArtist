@@ -3,37 +3,13 @@
   <head>
     
     <%- include('partials/template/head.ejs')  %> 
-    <link rel="stylesheet" href="/css/style2.css">
+    <link rel="stylesheet" href="/css/style3.css">
 
   </head>
   <body>
     <%- include('partials/content/header.ejs')  %> 
 
-    <% albums.forEach(albumObj => { %>
-     
-    <div class="p-5 d-flex justify-content-start">
-      <div class="col-4 d-flex align-items-center">
-        <div>
-          <img class="border-dark rounded-lg" width="300px" src=" <%= albumObj.artwork %> " alt="">
-        </div>
-      </div>
-      <div class="col-6">
-        <h2 class='m-2 display-5'> <%= albumObj.title %>  - <%= albumObj.year %> </h2>
-        <ul class='list-unstyled m-1 pl-3'>
-          <% for( let index = 0; index < albumObj.tracks.length; index++ ) { %>
-            <li> <%= albumObj.tracks[index] %>  </li>
-          <% } %>
-            
-         
-          
-          <!-- <li>track 2</li>
-          <li>track 3</li>
-          <li>track 4</li>
-          <li>track 5</li> -->
-        </ul>
-      </div>
-    </div>
-    <% }) %>
+    
 
     <%- include('partials/content/footer.ejs')  %>
 
