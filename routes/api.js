@@ -30,4 +30,17 @@ router.post('/api', (req, res) => {
     res.json(discussionData)
 })
 
+
+
+router.delete('/api/:ID', (req, res) => {
+
+
+    discussionData.splice(req.params.ID, 1);
+
+    let newfile = JSON.stringify(discussionData);
+    fs.writeFile('./data/discussion.json', newfile, 'utf-8', (err)=>{
+        console.log(err)
+    })
+    res.json(discussionData)
+})
 module.exports = router; 
