@@ -12,8 +12,16 @@ router.get('/albums', (req, res)=>{
 
 router.get('/albums/:albumID', (req, res)=>{
 
+    let albumsArray = dataFile.albums;
+    let singlealbum = [];
+
+    albumsArray.forEach((album) => {
+        if(album.shortname == req.params.albumID) {
+            singlealbum.push(album)
+        }
+    })
     res.render('albums', {
-        albums: albums
+        albums: singlealbum
     })
 })
 
