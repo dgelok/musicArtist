@@ -13,3 +13,9 @@ body{
 * {
     color: white;
 }
+
+.feedback-messages {
+    background-color: rgba(14, 13, 13, 0.808);
+    padding: 20px;
+    border-radius: 10px;
+}

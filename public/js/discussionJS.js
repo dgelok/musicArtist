@@ -36,9 +36,9 @@ $(() => {
             output += '       <div class="media-left"><button class="feedback-delete btn btn-xs btn-danger"><span id="' + key + '" class="glyphicon glyphicon-remove">x</span></button></div>';
             output += '         <div class="feedback-info media-body">';
             output += '           <div class="feedback-head">';
-            output += '             <div class="feedback-title">' + item.title + ' <small class="feedback-name label label-info">' + item.name + '</small></div>';
+            output += '             <div class="feedback-title m-3 h4">' + item.title + ' <div class="feedback-name label label-info pl-3 h6 text-muted">' + item.name + '</div></div>';
             output += '           </div>';
-            output += '           <div class="feedback-message">' + item.message + '</div>';
+            output += '           <div class="feedback-message m-3 pb-3">' + item.message + '</div>';
             output += '         </div>'; 
             output += '       </div>';
             output += '     </div>';
