@@ -19,8 +19,8 @@
       </div>
       <div class="col-6">
         <h2 class='m-2 display-5'> <%= albumObj.title %>  - <%= albumObj.year %> </h2>
-        <i class="fa fa-apple fa-lg pr-3 pl-3" aria-hidden="true"></i>
-        <i class="fa fa-spotify fa-lg pr-3 pl-3 pb-5" aria-hidden="true"></i>
+        <a target="_blank" href="<%= albumObj.apple %>"><i class="fa fa-apple fa-lg pr-3 pl-3" aria-hidden="true"></i></a>
+        <a target="_blank" href="<%= albumObj.spotify %>"><i class="fa fa-spotify fa-lg pr-3 pl-3 pb-5" aria-hidden="true"></i></a>
         <ul class='list-unstyled m-1 pl-3'>
           <% for( let index = 0; index < albumObj.tracks.length; index++ ) { %>
             <li> <%= albumObj.tracks[index] %>  </li>
