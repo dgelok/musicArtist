@@ -1,6 +1,8 @@
+require('dotenv').config();
 const express = require('express')
 const app = express()
 
+const PORT = process.env.PORT
 // public
 app.use(express.static('public'))
 
@@ -17,6 +19,6 @@ app.use(require('./routes/bio'))
 
 
 
-app.listen(4000, ()=>{
-    console.log("listening on port 4000")
+app.listen(PORT, ()=>{
+    console.log(`listening on port ${PORT}`)
 })
